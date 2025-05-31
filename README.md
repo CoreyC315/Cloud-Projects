@@ -26,5 +26,3 @@ This repository contains hands-on labs from my cloud computing coursework, focus
 - Migrate deployments to **Terraform**.  
 - Add **CI/CD pipelines** (GitHub Actions/Azure DevOps).  
 - Extend with **multi-cloud examples** (AWS/GCP).  
-
-> 💡 **Tip**: These labs align with Azure certifications (AZ-104, AZ-204). Pair them with [Microsoft Learn](https://learn.microsoft.com) modules for deeper study.  
