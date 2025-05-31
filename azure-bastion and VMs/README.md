@@ -28,24 +28,15 @@ This project demonstrates how to securely deploy and manage a Windows Server 202
 
 ## 🧭 Architecture Overview
 
-+--------------------------+
-| Azure Virtual |
-| Network (VNet) |
-| |
-| +--------------------+ |
-| | Subnet: Bastion | |
-| | - Bastion Host | |
-| +--------------------+ |
-| |
-| +--------------------+ |
-| | Subnet: VM | |
-| | - Windows Server | |
-| | - NSG Applied | |
-| +--------------------+ |
-+--------------------------+
+Azure Virtual Network (VNet)  
+├── Subnet: Bastion  
+│   └── Bastion Host (used for secure access without public IP)  
+└── Subnet: VM  
+    └── Windows Server 2022 VM  
+        ├── Initially accessed via Bastion  
+        ├── Later accessed via RDP with a public IP (restricted via NSG)  
+        └── NSG applied to control traffic  
 
-
----
 
 ## 📷 Screenshots
 
